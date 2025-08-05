@@ -1,0 +1,32 @@
+body {
+    width: 400px;
+    height: 350px;
+    font-family:'Tahoma', Verdana, Geneva,  sans-serif;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+}
+
+h1 {
+    font-size: 1.3em;
+    text-align: center;
+    color: #d01904;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+#summaryDisplay {
+    flex-grow: 1;
+    padding: 15px;
+    background-color: #373737;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* This is the key line for adding a scrollbar */
+    line-height: 1.6;
+    font-size: 1.2em;
+    
+    color: #ffffff;
+    white-space: pre-wrap; /* This preserves the line breaks from the AI output */
+}
