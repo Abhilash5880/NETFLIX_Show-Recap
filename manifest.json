@@ -20,7 +20,8 @@
     "https://api-inference.huggingface.co/*"
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "type" : "module"
   },
   "icons": {
     "16": "images/icon16.png",

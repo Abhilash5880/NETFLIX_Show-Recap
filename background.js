@@ -1,7 +1,6 @@
 // background.js
 
-const HF_API_TOKEN = 'your_api_key_here';
-const HF_MODEL_API_URL = 'https://router.huggingface.co/v1/chat/completions';
+import { HF_API_TOKEN, HF_MODEL_API_URL } from './config.js';
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === "requestSummary") {
