@@ -2,7 +2,7 @@
 
 ## 📺 AI-Powered Episode Recaps for Netflix
 
-**Link to Repository:** [Link to your new repository, e.g., https://github.com/Abhilash5880/NETFLIX-Show-Recap](https://github.com/Abhilash5880/NETFLIX-Show-Recap)
+**Link to Repository:** [click here](https://github.com/Abhilash5880/NETFLIX_Show-Recap)
 
 This Chrome Extension enhances your Netflix viewing experience by providing quick, AI-generated summaries of TV show episodes. Never feel lost or forget key plot points before diving into the next episode!
 
