@@ -27,12 +27,12 @@ To get this extension running locally or contribute:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/](https://github.com/)Abhilash5880/NETFLIX_Show-Recap.git
+    git clone https://github.com/Abhilash5880/NETFLIX_Show-Recap.git
     cd NETFLIX_Show-Recap
     ```
 
 2.  **Hugging Face API Token Setup:**
-    * Go to [Hugging Face](https://huggingface.co/) and log in or create an account.
+    * Go to https://huggingface.co and log in or create an account.
     * Navigate to your **Settings** > **Access Tokens** and generate a new User Access Token.
     * Create a file named `config.js` in the root directory of your project (the same directory as `background.js` and `manifest.json`).
     * Add the following content to `config.js`, **replacing `your_hugging_face_api_token_here` with your actual token**:
