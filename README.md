@@ -27,8 +27,8 @@ To get this extension running locally or contribute:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/](https://github.com/)[Your GitHub Username]/NETFLIX-Show-Recap.git
-    cd NETFLIX-Show-Recap
+    git clone [https://github.com/](https://github.com/)Abhilash5880/NETFLIX_Show-Recap.git
+    cd NETFLIX_Show-Recap
     ```
 
 2.  **Hugging Face API Token Setup:**
