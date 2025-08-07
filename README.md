@@ -88,3 +88,4 @@ This project provided valuable learning opportunities in several key areas:
 Contributions are welcome! If you have suggestions for improvements, new features, or bug fixes, please open an issue or submit a pull request.
 
 ### 📝 License
+This project is open-source and available under the MIT license.
