@@ -39,7 +39,7 @@ To get this extension running locally or contribute:
         ```javascript
         // config.js
         const HF_API_TOKEN = 'your_hugging_face_api_token_here';
-        const HF_MODEL_API_URL = '[https://router.huggingface.co/v1/chat/completions](https://router.huggingface.co/v1/chat/completions)';
+        const HF_MODEL_API_URL = 'https://router.huggingface.co/v1/chat/completions';
 
         export { HF_API_TOKEN, HF_MODEL_API_URL };
         ```
