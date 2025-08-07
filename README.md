@@ -8,7 +8,7 @@ This is a simple Chrome Extension that enhances your Netflix viewing experience 
 
 ### ✨ Features
 
-* **Intelligent Episode Detection:** Automatically identifies the show, season, and episode you are currently watching on Netflix. (for now only works with the NETFLIX title page, will add more integrations later on)
+* **Intelligent Episode Detection:** Automatically identifies the show, season, and episode you are currently watching on Netflix. (for now only works with NETFLIX on particular show's title page, will add more integrations later on)
 * **AI-Powered Summaries:** Utilizes a powerful Hugging Face model to generate brief, relevant recaps of events leading up to the current episode.
 * **Quick Memory Refresh:** Get 3-4 bullet points summarizing previous events, perfect for reminding yourself of the plot without spoilers.
 * **Seamless Integration:** Designed to work directly within your Netflix browser tab.
