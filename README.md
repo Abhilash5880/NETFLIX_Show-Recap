@@ -53,7 +53,7 @@ To get this extension running locally or contribute:
     * Open Chrome and go to `chrome://extensions`.
     * Enable **"Developer mode"** (usually a toggle in the top right).
     * Click on **"Load unpacked"**.
-    * Select the root directory of your project (`NETFLIX-Show-Recap`).
+    * Select the root directory of your project (`NETFLIX_Show-Recap`).
     * The extension should now appear in your list of installed extensions.
   
 ### 🧠 Model Selection
