@@ -4,11 +4,11 @@
 
 **Link to Repository:** [click here](https://github.com/Abhilash5880/NETFLIX_Show-Recap)
 
-This Chrome Extension enhances your Netflix viewing experience by providing quick, AI-generated summaries of TV show episodes. Never feel lost or forget key plot points before diving into the next episode!
+This is a simple Chrome Extension that enhances your Netflix viewing experience by providing AI-generated recaps for TV show. Never feel lost or forget key plot points before diving into the next episode!
 
 ### ✨ Features
 
-* **Intelligent Episode Detection:** Automatically identifies the show, season, and episode you are currently watching on Netflix.
+* **Intelligent Episode Detection:** Automatically identifies the show, season, and episode you are currently watching on Netflix. (for now only works with the NETFLIX title page, will add more integrations later on)
 * **AI-Powered Summaries:** Utilizes a powerful Hugging Face model to generate brief, relevant recaps of events leading up to the current episode.
 * **Quick Memory Refresh:** Get 3-4 bullet points summarizing previous events, perfect for reminding yourself of the plot without spoilers.
 * **Seamless Integration:** Designed to work directly within your Netflix browser tab.
@@ -19,7 +19,7 @@ The extension works by:
 1.  Detecting the TV show title, season, and episode number from the active Netflix tab.
 2.  Sending this information, along with a carefully crafted prompt, to a Hugging Face hosted language model (Qwen/Qwen3-Coder-480B-A35B-Instruct).
 3.  Receiving a brief, bullet-point summary from the AI.
-4.  Displaying the summary in a clean, concise popup within the extension.
+4.  Displaying the summary in a clean, concise, scrollable popup within the extension.
 
 ### 🛠️ Setup and Installation (For Developers)
 
@@ -55,6 +55,22 @@ To get this extension running locally or contribute:
     * Click on **"Load unpacked"**.
     * Select the root directory of your project (`NETFLIX-Show-Recap`).
     * The extension should now appear in your list of installed extensions.
+  
+### 🧠 Model Selection
+
+Initially, I planned on Gemini and ChatGPT for generating results but after continous failures I realized they were paid. However, to maintain an open-source and cost-effective approach, the focus shifted to finding a suitable free model. This led to a search on Hugging Face, a platform known for hosting a vast collection of open-source and accessible AI models. 
+A key challenge emerged during model testing. An initial model, zai-org/GLM-4.5, while capable, would often include a verbose "thinking" process in its output. It would start with an internal thought process like "Thought: The user wants a summary of..." before providing the actual summary. This unnecessary text was not suitable for a user-facing application. The issue was resolved by switching to a more suitable model, Qwen/Qwen3-Coder-480B-A35B-Instruct, which produced a clean, direct response without the extraneous conversational filler.
+The Qwen/Qwen3-Coder-480B-A35B-Instruct model was finally chosen for its ability to follow instructions and generate accurate, concise recaps quickly.
+
+### 🤝 Challenges and Solutions
+
+This project provided valuable learning opportunities in several key areas:
+
+* **Secure API Key Management:** Encountered lots of errors when attempting to push a hard-coded API key to GitHub. The solution involved moving the key to a separate `config.js` file and adding that file to `.gitignore` to prevent it from being exposed in the public repository.
+* **Git History Rewriting:** The API key was still present in the commit history, causing GitHub's secret scanning to block all pushes. Resolved this by using `git reset --hard` to completely erase the bad commit from our local history before performing a `git push --force` to overwrite the remote history.
+* **JavaScript Module Syntax:** Hit a `SyntaxError` when using `import` statements in `background.js`. This was fixed by correctly configuring the `manifest.json` file to declare the background script as a module, allowing the use of modern JavaScript syntax.
+* **Hugging Face API Token Expiration:** After the API key was exposed, Hugging Face automatically revoked the token for security. The fix was to generate a new token and update the local `config.js` file, ensuring the application could once again authenticate with the API.
+
 
 ### 🐛 Debugging Tips
 
@@ -72,5 +88,3 @@ To get this extension running locally or contribute:
 Contributions are welcome! If you have suggestions for improvements, new features, or bug fixes, please open an issue or submit a pull request.
 
 ### 📝 License
-
-This project is open-source and available under the `[Choose your license, e.g., MIT License]` license.
