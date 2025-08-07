@@ -1,6 +1,6 @@
 # Netflix TV Show Summarizer Chrome Extension
 
-## 📺 AI-Powered Episode Recaps for Netflix
+## 📺 AI-Powered Episode Recaps for Netflix (work in progress)
 
 **Link to Repository:** [click here](https://github.com/Abhilash5880/NETFLIX_Show-Recap)
 
