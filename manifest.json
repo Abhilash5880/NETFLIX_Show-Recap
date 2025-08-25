@@ -6,9 +6,7 @@
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "images/icon16.png",
-      "48": "images/icon48.png",
-      "128": "images/icon128.png"
+      "16": "images/Gemini_Generated_Image_7bm7so7bm7so7bm7.png"
     }
   },
   "permissions": [
@@ -24,8 +22,6 @@
     "type" : "module"
   },
   "icons": {
-    "16": "images/icon16.png",
-    "48": "images/icon48.png",
-    "128": "images/icon128.png"
+    "16": "images/icon16.png"
   }
 }
